@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, addDoc, query, onSnapshot, serverTimestamp, doc, getDoc, setDoc, orderBy, limit, getDocs, where, updateDoc, increment } from 'firebase/firestore';
+import { getFirestore, collection, addDoc, query, onSnapshot, serverTimestamp, doc, getDoc, updateDoc, increment, orderBy, limit, getDocs, where } from 'firebase/firestore';
 
 // --- Firebase Configuration ---
 const firebaseConfig = {
@@ -454,4 +454,3 @@ function FloatingWriteButton({ navigateTo }) {
         </button>
     );
 }
-
